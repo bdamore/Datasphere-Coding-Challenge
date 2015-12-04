@@ -1,0 +1,129 @@
+.container {
+  margin: 20px;
+  //TODO: figure out if we can avoid hard-coding
+  width: 690px;
+  font-family: sans-serif;
+
+  .header {
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    background-color: #097ab2;
+    color: white;
+    padding: 20px;
+  }
+
+  .information {
+    .block {
+      margin-top: 40px;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      flex-direction:column;
+
+      div {
+        display:flex;
+        justify-content:center;
+      }
+    }
+
+    .matches-found {
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      color: grey;
+    }
+  }
+
+  .business-block {
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    .location-block {
+      font-size: 25px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .location {
+        display: flex;
+
+        .image {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+
+        .state {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .logo-category-block {
+      display: flex;
+
+      .logo-image {
+        margin-top: -70px;
+        margin-left: 20px;
+        border: 7px solid white;
+        border-radius: 5px;
+        box-shadow: 0 0 3px grey;
+      }
+      .category {
+        margin: 40px;
+        font-size: 40px;
+      }
+    }
+
+    .name {
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      background-color: #097ab2;
+      margin: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .coupon-block {
+      .coupon {
+        border-top: 2px solid grey;
+        margin: 20px;
+        padding: 20px;
+        font-size: 40px;
+      }
+
+      .see-more {
+        border-top: 2px solid grey;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        color: #007acc;
+        margin: 20px;
+        padding-top:40px;
+
+        .text {
+          margin-right: 15px;
+          margin-bottom: 20px;
+        }
+        .number {
+          background-color: #007acc;
+          color: white;
+          border-radius: 58px;
+          height: 55px;
+          width: 60px;
+          display: flex;
+          justify-content: center;
+          padding-top: 5px;
+        }
+      }
+    }
+
+  }
+}

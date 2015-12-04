@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="header">localsaver</div>
+  <div class="information">
+    <div class="block">
+      <div class="block1">Coupons & Deals</div>
+      <div class="block2">near You</div>
+    </div>
+    <br>
+    <div class="matches-found">+ {{businesses.length}} MATCHES FOUND</div>
+  </div>
+
+  <div class="business-block" ng-repeat="business in businesses | limitTo: 10">
+    <div class="location-block">
+    <span class="location">
+      <div class="image"><img src="app/assets/images/pin.png"/></div>
+      <div class="city">{{business.city}}, </div>
+      <div class="state">{{business.state}}</div>
+    </span>
+      <span class="city">{{business.distance}} mi</span>
+    </div>
+    <div class="image-block">
+      <img src="app/assets/images/tile1-main.jpg"/>
+    </div>
+    <div class="logo-category-block">
+      <img class="logo-image" src="app/assets/images/tile1-logo.jpg"/>
+      <div class="category">
+        {{business.category}}
+      </div>
+    </div>
+    <div class="name">
+      {{business.businessname}}
+    </div>
+    <div class="coupon-block">
+      <div class="coupon" ng-repeat="coupon in business.coupons | limitTo:2">
+        {{coupon.title}}
+      </div>
+      <div class="see-more" ng-if="business.coupons.length > 2">
+        <div class="text">See All</div>
+        <div class="number">{{business.coupons.length}}</div>
+      </div>
+    </div>
+  </div>
+</div>
